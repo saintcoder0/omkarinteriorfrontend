@@ -38,7 +38,7 @@ const PortfolioPage = ({ onNavigate }) => {
           <h1 className="portfolio-title">Our Work</h1>
           <p className="portfolio-subtitle">A curated selection of our finest projects, showcasing our commitment to detail and quality.</p>
         </div>
-      </header>
+          </header>
       <main className="section">
         <div className="container">
           <div className="portfolio-full-grid" ref={gridRef}>
@@ -46,7 +46,7 @@ const PortfolioPage = ({ onNavigate }) => {
               <div key={project.id} className="grid-item">
                 <img src={project.imageUrl} alt={project.title} className="grid-image" />
                 <div className="grid-overlay">
-                  <h3>{project.title}</h3>
+                    <h3>{project.title}</h3>
                   <p>{project.category}</p>
                 </div>
               </div>
@@ -54,7 +54,7 @@ const PortfolioPage = ({ onNavigate }) => {
           </div>
         </div>
       </main>
-    </div>
+      </div>
   );
 };
 
